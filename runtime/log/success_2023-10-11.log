@@ -1,0 +1,5 @@
+2023-10-11 12:59:37 - 127.0.0.1 "GET /user/info/2 HTTP/1.1 200 6.57ms "Apifox/1.0.0 (https://apifox.com)" "
+2023-10-11 12:59:43 - 127.0.0.1 "GET /user/info/3 HTTP/1.1 200 976.4µs "Apifox/1.0.0 (https://apifox.com)" "
+2023-10-11 12:59:49 - 127.0.0.1 "GET /user/info/2 HTTP/1.1 200 1.6605ms "Apifox/1.0.0 (https://apifox.com)" "
+2023-10-11 12:59:54 - 127.0.0.1 "GET /user/info/1 HTTP/1.1 200 690.5µs "Apifox/1.0.0 (https://apifox.com)" "
+2023-10-11 17:15:44 - 127.0.0.1 "POST /user/add HTTP/1.1 200 18.3377ms "Apifox/1.0.0 (https://apifox.com)" "

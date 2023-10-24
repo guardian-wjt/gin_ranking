@@ -1,0 +1,144 @@
+panic error time:2023-10-14 17:22:12
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 73 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0xba6340, 0x10dfe00})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+github.com/gin-contrib/sessions.(*session).Session(0xc00059c050)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:132 +0x33
+github.com/gin-contrib/sessions.(*session).Set(0xc00059c050, {0xb7a200, 0xc0006841c0}, {0xb798c0?, 0x10b5868})
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:88 +0x3b
+gin_ranking/controllers.UserController.Login({}, 0xc000091468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/user.go:66 +0x276
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc0005cc100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc0005cc100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0005cc100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0005cc100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0005cc100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000580820, 0xc0005cc100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000580820, {0xd39780?, 0xc00064c1c0}, 0xc000150000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xd380c8?}, {0xd39780, 0xc00064c1c0}, 0xc000150000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0006441b0, {0xd39dd8, 0xc000688660})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-14 17:25:43
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 41 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x1296340, 0x17cfe00})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+github.com/gin-contrib/sessions.(*session).Session(0xc0005a6140)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:132 +0x33
+github.com/gin-contrib/sessions.(*session).Set(0xc0005a6140, {0x126a200, 0xc000526c20}, {0x12698c0?, 0x17a5868})
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:88 +0x3b
+gin_ranking/controllers.UserController.Login({}, 0xc000097468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/user.go:66 +0x276
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc00008e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc00008e100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00008e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00008e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00008e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000600820, 0xc00008e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000600820, {0x1429780?, 0xc0000a0000}, 0xc00008e000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x14280c8?}, {0x1429780, 0xc0000a0000}, 0xc00008e000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0005ca000, {0x1429dd8, 0xc0005a42a0})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-14 17:29:50
+runtime error: invalid memory address or nil pointer dereference
+stacktrace from panic:goroutine 15 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0xd76340, 0x12afe00})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+github.com/gin-contrib/sessions.(*session).Session(0xc000422370)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:132 +0x33
+github.com/gin-contrib/sessions.(*session).Set(0xc000422370, {0xd4a200, 0xc000099710}, {0xd498c0?, 0x1285868})
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:88 +0x3b
+gin_ranking/controllers.UserController.Login({}, 0xc0004b1468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/user.go:66 +0x276
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000515500)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000515500)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000515500)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000515500)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000515500)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc0000849c0, 0xc000515500)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc0000849c0, {0xf09780?, 0xc00072efc0}, 0xc000515400)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xf080c8?}, {0xf09780, 0xc00072efc0}, 0xc000515400)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00018e240, {0xf09dd8, 0xc00009ce70})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+

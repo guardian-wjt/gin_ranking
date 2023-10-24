@@ -1,0 +1,440 @@
+panic error time:2023-10-16 12:28:12
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 27 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x726bc0, 0xc000100230})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc00051b468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc00023a100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc00023a100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00023a100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00023a100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00023a100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc00058ed00, 0xc00023a100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc00058ed00, {0x8c3f90?, 0xc00013c000}, 0xc00023a000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x8c28b0?}, {0x8c3f90, 0xc00013c000}, 0xc00023a000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0005ce000, {0x8c45d8, 0xc0006890e0})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:30:44
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 54 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x946bc0, 0xc00061e730})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc000135468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000114200)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000500ea0, 0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000500ea0, {0xae3f90?, 0xc0001100e0}, 0xc000114100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xae28b0?}, {0xae3f90, 0xc0001100e0}, 0xc000114100)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001081b0, {0xae45d8, 0xc000474c90})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:33:09
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 54 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x946bc0, 0xc000424050})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc000159468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000114200)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000500ea0, 0xc000114200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000500ea0, {0xae3f90?, 0xc0001101c0}, 0xc000114000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0xae28b0?}, {0xae3f90, 0xc0001101c0}, 0xc000114000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0001081b0, {0xae45d8, 0xc000474c90})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:34:39
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 42 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0xe76bc0, 0xc0005925f0})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc00054b468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000524200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000524200)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000524200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000524200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000524200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000104340, 0xc000524200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000104340, {0x1013f90?, 0xc0005220e0}, 0xc000524100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x10128b0?}, {0x1013f90, 0xc0005220e0}, 0xc000524100)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0006ac240, {0x10145d8, 0xc000516600})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:39:39
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 30 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x1626bc0, 0xc00041c500})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc0000ef468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc0006b7900)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc0006b7900)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0006b7900)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc0006b7900)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc0006b7900)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000085380, 0xc0006b7900)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000085380, {0x17c3f90?, 0xc0001921c0}, 0xc0006b7800)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x17c28b0?}, {0x17c3f90, 0xc0001921c0}, 0xc0006b7800)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000d01b0, {0x17c45d8, 0xc0004743f0})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:50:49
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 69 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x1476bc0, 0xc00069d4a0})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc00063f468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000636100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000636100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000636100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000636100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000636100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc0006004e0, 0xc000636100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc0006004e0, {0x1613f90?, 0xc00064a000}, 0xc000636000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x16128b0?}, {0x1613f90, 0xc00064a000}, 0xc000636000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0000881b0, {0x16145d8, 0xc00069be90})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 12:58:47
+dial tcp 123.249.91.128:6379: i/o timeout
+stacktrace from panic:goroutine 14 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x1226bc0, 0xc0003981e0})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc000537468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc00052e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc00052e100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00052e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc00052e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc00052e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000480680, 0xc00052e100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000480680, {0x13c3f90?, 0xc000546000}, 0xc00052e000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x13c28b0?}, {0x13c3f90, 0xc000546000}, 0xc00052e000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010e240, {0x13c45d8, 0xc00049d260})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 13:07:46
+dial tcp 123.249.91.128:6379: connectex: No connection could be made because the target machine actively refused it.
+stacktrace from panic:goroutine 14 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0x1226bc0, 0xc0006720a0})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc0004d9468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000150100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000150100)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000150100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000150100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000150100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000480680, 0xc000150100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000480680, {0x13c3f90?, 0xc00059a0e0}, 0xc000150000)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x13c28b0?}, {0x13c3f90, 0xc00059a0e0}, 0xc000150000)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc00010e240, {0x13c45d8, 0xc00049d260})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 13:09:20
+dial tcp 123.249.91.128:6379: connectex: No connection could be made because the target machine actively refused it.
+stacktrace from panic:goroutine 55 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0xf36bc0, 0xc000609040})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc0004a9468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000584b00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000584b00)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000584b00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000584b00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000584b00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000085040, 0xc000584b00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000085040, {0x10d3f90?, 0xc000656fc0}, 0xc000584a00)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x10d28b0?}, {0x10d3f90, 0xc000656fc0}, 0xc000584a00)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0005861b0, {0x10d45d8, 0xc000475110})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
+panic error time:2023-10-16 15:43:09
+dial tcp 123.249.91.128:6379: connectex: No connection could be made because the target machine actively refused it.
+stacktrace from panic:goroutine 55 [running]:
+runtime/debug.Stack()
+	D:/workspast/go/go1.20.5/src/runtime/debug/stack.go:24 +0x65
+gin_ranking/pkg/logger.Recover.func1()
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:138 +0x296
+panic({0xf36bc0, 0xc00041e0f0})
+	D:/workspast/go/go1.20.5/src/runtime/panic.go:884 +0x213
+gin_ranking/controllers.PlayerController.GetRanking({}, 0xc000111468?)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/controllers/player.go:32 +0x11b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-contrib/sessions.Sessions.func1(0xc000584200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-contrib/sessions@v0.0.5/sessions.go:54 +0x19a
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+gin_ranking/pkg/logger.Recover(0xc000584200)
+	D:/workspast/go/GOPROJECT/src/gin_ranking/pkg/logger/logger.go:148 +0x6b
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000584200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1(0xc000584200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/recovery.go:102 +0x82
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1(0xc000584200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/logger.go:240 +0xe7
+github.com/gin-gonic/gin.(*Context).Next(...)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest(0xc000085040, 0xc000584200)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:620 +0x66b
+github.com/gin-gonic/gin.(*Engine).ServeHTTP(0xc000085040, {0x10d3f90?, 0xc0001921c0}, 0xc000584100)
+	D:/workspast/go/GOPROJECT/pkg/mod/github.com/gin-gonic/gin@v1.9.1/gin.go:576 +0x1dd
+net/http.serverHandler.ServeHTTP({0x10d28b0?}, {0x10d3f90, 0xc0001921c0}, 0xc000584100)
+	D:/workspast/go/go1.20.5/src/net/http/server.go:2936 +0x316
+net/http.(*conn).serve(0xc0005861b0, {0x10d45d8, 0xc000475110})
+	D:/workspast/go/go1.20.5/src/net/http/server.go:1995 +0x612
+created by net/http.(*Server).Serve
+	D:/workspast/go/go1.20.5/src/net/http/server.go:3089 +0x5ed
+
